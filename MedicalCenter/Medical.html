@@ -1,0 +1,185 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta  charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Medical Center</title>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <script src="medical.js"></script>
+    </head>
+
+<body>  
+    <div class="header">
+        <h1>Hospital Management System</h1>
+        <h2>Patient Presciption</h2>
+        <p id="date"></p>
+    </div>
+
+    <br>
+    <div class="Patient">
+        <p id="position1"></p>
+        <p id="position2"></p>
+        <p id="position3"></p>
+        <p id="position4"></p>
+    </div>
+    
+    <div class="Doctor">
+        <p id="positionA">Doctor Mrs. Temaka</p>
+        <p id="positionB">Phone NUmber: 301-567-9876</p>
+        <p id="positionC">Doc ID: AXZ23431</p>
+        <p id="positionD">Office Hours: 8am-6pm</p>
+        <p id="positionD">Address:4321 Forstville, MD</p>
+    </div>
+
+    <div class="myimage">
+        <img src="images/doctor.jpg" alt="mydoctor" width="200" height="200">
+    </div>
+
+    <table class="check_pulse" style="border:0px solid black;">
+        <tr>
+            <td id="tablet"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+        
+    <div>
+        <table class="medicine">
+            <tr>
+                <td>Name of Tablets</td>
+                <td>
+                    <select id="health" name="method" onchange="medical();">
+                        <option></option>
+                        <option>Atenolol</option>
+                        <option>Simvastatin</option>
+                        <option>Lisinopril-Hydrochlorothiazide</option>
+                        <option>Furosemide</option>
+                        <option>Propranolol</option>
+                    </select>   
+                </td>
+            </tr>
+
+        <tr>
+            <td>Reference No</td>
+            <td><input type="text" name="text" id="demo"  required></td>  
+        </tr>
+
+        <tr>
+            <td>Dose (mg)</td>
+            <td><input type="text" name="text1" id="demo1"  required></td>  
+        </tr>
+
+        <tr>
+            <td>Number of Tablets</td>
+            <td><input type="text" name="text2" id="demo2"  required></td>  
+        </tr>
+
+        <tr>
+            <td>LOT</td>
+            <td><input type="text" name="text3" id="demoX"  required></td>  
+        </tr>
+
+        <tr>
+            <td>Issue Date:</td>
+            <td><input type="text" name="text4" id="demo3"  required></td>  
+        </tr>
+
+        <tr>
+            <td>Expiration Date:</td>
+            <td><input type="text" name="text5" id="demo4"  required></td>  
+        </tr>
+
+        <tr>
+            <td>Daily Dose</td>
+            <td><input type="text" name="text6" id="demo5"  required></td>  
+        </tr>
+
+        <tr>
+            <td>Possible Side Effects</td>
+            <td><input type="text" name="text7" id="demo6"  required></td>  
+        </tr>
+    </table>
+</div>
+
+<div>
+    <table class="hospital">
+    <tr>
+        <td>Further Information</td>
+        <td><input type="text" name="text8" id="demo7"  required></td>  
+    </tr>
+
+    <tr>
+        <td>Storage Advice</td>
+        <td><input type="text" name="text9" id="demo8"  required></td>  
+    </tr>
+
+    <tr>
+        <td>Driving and Using Machine</td>
+        <td><input type="text" name="text10" id="demo9"  required></td>  
+    </tr>
+
+    <tr>
+        <td>How to use Medication</td>
+        <td><input type="text" name="text11" id="demo10"  required></td>  
+    </tr>
+
+    <tr>
+        <td>Patient ID:</td>
+        <td><input type="text" name="text12" id="demo11"  required></td>  
+    </tr>
+
+    <tr>
+        <td>NHS Number:</td>
+        <td><input type="text" name="text13" id="demo12"  required></td>  
+    </tr>
+
+    <tr>
+        <td>Patient Name:</td>
+        <td><input type="text" name="text14" id="demo13" required></td>  
+    </tr>
+
+    <tr>
+        <td>Date of Birth:</td>
+        <td><input type="text" name="text15" id="demo14"  required></td>  
+    </tr>
+
+    <tr>
+        <td>Patient Address:</td>
+        <td><input type="text" name="text16" id="demo15"  required></td>  
+    </tr> 
+    </table>
+</div>
+
+<div class="nested">
+    <div>
+        <input type ="submit" onclick="printDiv('divName')" value="Presciption">
+    </div>
+
+    <div>
+        <input type ="submit" value="Patient">
+    </div>
+
+    <div>
+        <input type ="submit" value="Appointment">
+    </div>
+
+    <div>
+        <input type ="submit" value="Update">
+    </div>
+</div>
+
+<!--
+    <div class="Print">
+        <input type ="submit" value="Print">
+        <button onclick="window.print()">Print this page</button>
+    </div>
+-->
+    
+
+    <div class="down">
+        <footer style="height:20px;">
+                Copyright © Health Care Management 2022
+        </footer>
+    </div>
+</body>
+</html>

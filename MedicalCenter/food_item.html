@@ -1,0 +1,209 @@
+<!--
+  This project is design for the purpose of food ordering system. A client choose what they want 
+  and the price of the item will be displayed. This is one of my personal projects im working on.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Item</title>
+  <link rel="stylesheet" type="text/css" href="item.css">    
+</head>
+
+<body>
+<h2>Jodeem African Cuisine</h2>
+
+  <div>
+    <header class="center">
+      <div>${Jodeem African Cuisine }</div>
+      <div>${ vatNo }</div>
+      <h2>Foodie</h2>
+    </header>
+
+<section>
+  <table class="summary" cellspacing="0" align="center">
+    <tbody>
+      <tr>
+        <td>Ref No.: 0000034</td>
+        <td>Date: ${ date }</td>
+      </tr>
+
+      <tr>
+        <td>Till ID: 2</td>
+        <td>Time: ${ time }</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</section>
+</div>
+    
+<section>
+  <table class="summary" cellspacing="0" align="right">
+    <tbody>
+      <tr>
+        <td id="f1"></td>
+        <td id="p1"></td>
+      </tr>
+
+      <tr>
+        <td id="f2"></td>
+        <td id="p2"></td>
+      </tr>
+
+      <tr>
+        <td id="f3"></td>
+        <td id="p3"></td>
+      </tr>
+
+      <tr>
+        <td id="f4"></td>
+        <td id="p4"></td>
+      </tr>
+
+      <tr>
+        <td id="f5"></td>
+        <td id="p5"></td>
+      </tr>
+
+      <tr>
+        <td id="f6"></td>
+        <td id="p6"></td>
+      </tr>
+
+      <tr>
+        <td id="f7"></td>
+        <td id="p8"></td>
+      </tr>
+
+      <tr>
+        <td id="f8"></td>
+        <td id="p8"></td>
+      </tr>
+
+      <tr>
+        <td id="f9"></td>
+        <td id="p9"></td>
+      </tr>
+
+      <tr>
+        <td id="f10"></td>
+        <td id="p10"></td>
+      </tr>
+
+      <tr>
+        <td>
+          <p id="display"></p>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</section>
+
+<div class="coder">
+  <button class="button" onclick ="food1()">Oxtail & Curried Goat</button>
+  <button class="button" onclick ="food2()">Jerk Chicken & Jerk BBQ Wings </button>
+  <button class="button" onclick ="food3()">Brown Stew & Curried Chicken</button><br><br>
+  <button class="button" onclick ="food4()">Curried Red Snapper</button> 
+  <button class="button" onclick ="food5()">Brown Stew Red Snapper</button><br>
+  <button class="button" onclick ="food6()">Ackee & Saltfish</button> 
+  <button class="button" onclick ="food7()">Callaloo & Saltfish</button>
+  <button class="button" onclick ="food8()">King Fish</button><br> 
+  <button class="button" onclick ="food9()">Curried Chicken</button>
+  <button class="button" onclick ="food10()">Jerk Chicken</button><br>
+  <button class="button" onclick ="food11()">Brown Stew Chicken</button>
+  <button class="button" onclick ="food12()">jerk BBQ Wings</button>
+  <button class="button" onclick ="food13()">Curried Shrimp</button><br> 
+  <button class="button" onclick ="food13()">Steamed Red Snapper</button><br> 
+  <button class="button" onclick ="addPrices()">Complete Order</button>
+</div>
+  <!-- parseFloat("3.2") + parseInt("2.7") = 3.2 + 2 = 5.2 --> 
+<script>
+function food1(){
+    var p = 24.95
+    var s  = "Oxtail & Curried Goat";
+    document.getElementById("f1").innerHTML = s;
+    document.getElementById("p1").innerHTML = p;
+    
+    solution = parseFloat(24.95) +  parseFloat(0.00);
+    document.getElementById("display").innerHTML = solution;
+}
+  function food2(){
+    var x = 24.95;
+    var food = "Jerk Chicken & Jerk BBQ Wings";
+    document.getElementById("f2").innerHTML = food;
+    document.getElementById("p2").innerHTML = x;
+    
+    solution = parseFloat(24.95) +  parseFloat(24.95);
+    document.getElementById("display").innerHTML = solution;
+  }
+
+  function food3(){
+    var y = 24.95;
+    var fi = "Brown Stew & Curried Chicken";
+    document.getElementById("f3").innerHTML = fi;
+    document.getElementById("p3").innerHTML = y;
+
+    solution = parseFloat(24.95) +  parseFloat(24.95);
+    document.getElementById("display").innerHTML = solution;
+  }
+
+  function food4(){
+    var j = 18.95;
+    var j2 = "Curried Red Snapper";
+    document.getElementById("f4").innerHTML = j2;
+    document.getElementById("p4").innerHTML = j;
+
+    solution = parseFloat(18.95) +  parseFloat(24.95);
+    document.getElementById("display").innerHTML = solution;
+  }
+
+  function food5(){
+    var lr = 18.95;
+    var b2 = "Brown  Stew Red Snapper";
+    document.getElementById("f5").innerHTML = b2;
+    document.getElementById("p5").innerHTML = lr;
+
+    solution = parseFloat(18.95) +  parseFloat(18.95);
+    document.getElementById("display").innerHTML = solution;
+  }
+
+  function food6(){
+    var ck = 13.45;
+    var f2 = "Ackee & Saltfish";
+    document.getElementById("f6").innerHTML = f2;
+    document.getElementById("p6").innerHTML = ck;
+
+    solution = parseFloat(13.45) +  parseFloat(18.95);
+    document.getElementById("display").innerHTML = solution;
+  }
+
+  function food7(){
+    var pr = 11.75;
+    var sp = "Callaloo & Saltfish";
+    document.getElementById("f7").innerHTML = sp;
+    document.getElementById("p7").innerHTML = pr;
+
+    solution = parseFloat(11.75) +  parseFloat(13.45);
+    document.getElementById("display").innerHTML = solution;
+  }
+
+  function food8(){
+    var pr = 13.75;
+    var sp = "king fish";
+    document.getElementById("f8").innerHTML = sp;
+    document.getElementById("p8").innerHTML = pr;
+
+    solution = parseFloat(11.75) +  parseFloat(13.75);
+    document.getElementById("display").innerHTML = solution;
+  }
+</script>
+
+<script>
+  function addPrices(){ 
+  }
+</script> 
+
+
+</body>
+</html>

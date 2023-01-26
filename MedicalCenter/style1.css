@@ -1,0 +1,123 @@
+table.hospital{
+    margin-left: 550px;
+    margin-right: 400px;
+    margin-top: -225px;
+}
+
+table.medicine{
+    margin-left: 160px;
+}
+
+table.info {
+    position: absolute;
+    bottom: 150px;
+    border: 1px solid black;
+    width: 50%;
+}
+.header {
+    text-align: center;
+    font-size: 15px;
+    background-color: tomato;
+    width: 100%;
+    margin-top: -25px;
+    } 
+.down{
+    margin-top: 320px;
+}
+input[type="submit"] {
+    padding: 9px;
+    width: 15em;
+    height:3em;
+    }
+.focus{
+    position: sticky;
+    bottom: 150px;
+    right: -100px;
+    }
+.doctor{
+    position: sticky;
+    bottom: 190px;
+    left: 235px;
+    }
+    
+.Patient{
+    position: sticky;
+    bottom: 229px;
+    left: 370px;
+}
+.appoint{
+    position: sticky;
+    bottom: 100px;
+    left: 235px; 
+}
+.Print{
+    position: sticky;
+    bottom: 229px;
+    left: 370px;
+}
+
+.clear{
+    position: sticky;
+    bottom: 170px;
+    left: 505px;  
+}
+div.nested{
+    margin-top: -430px;
+    margin-left: 10px;
+}
+h1{
+    color: bisque;
+}
+h2{
+    color: azure;
+}
+
+th{
+    font-size: 12px;
+    
+}
+#ginger{
+    position: relative;
+    float: right;
+}
+
+
+.Patient{
+    width: 25%;
+    float: right;
+    text-align: center;
+    align-content: center;
+    margin-top: -130px;
+    }
+
+.Doctor{
+    margin-left: 250px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    margin-top: -50px;
+    background-color: rgb(137, 117, 117);
+    width: 65%;
+    text-align:left;
+}
+
+.myimage{
+    position: absolute;
+    top: 105px;
+    left: 690px;
+}
+    
+.check_pulse{
+    float: right;
+    text-align: center;
+    align-content: center;
+    top: -50px;
+}
+
+footer{
+    text-align: center;
+    padding: 2px;
+    background-color: rgb(110, 33, 33);
+    color: white;
+    margin-top: 102px;
+  }
